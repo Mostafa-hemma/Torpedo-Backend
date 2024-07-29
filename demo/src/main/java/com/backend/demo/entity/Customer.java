@@ -33,7 +33,6 @@ public class Customer {
 	private String name;
 	
 	@Column(name="password")
-	@JsonIgnore
 
 	private String password;
 	

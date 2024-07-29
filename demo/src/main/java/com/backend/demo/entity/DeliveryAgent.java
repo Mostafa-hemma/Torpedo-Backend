@@ -28,7 +28,6 @@ public class DeliveryAgent {
 	@Column(name="phone_number")
 	private int phoneNumber;
 	@Column(name = "password")
-	@JsonIgnore
 	private String password;
 	
 	@OneToMany(mappedBy = "deliveryAgent" , cascade = {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.MERGE,CascadeType.PERSIST,CascadeType.REFRESH} )

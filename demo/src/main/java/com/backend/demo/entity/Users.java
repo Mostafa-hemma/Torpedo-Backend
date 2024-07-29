@@ -34,7 +34,6 @@ public class Users {
 	private String lastName;
 	
 	@Column(name="password")
-	@JsonIgnore
 
 	private String password;
 	

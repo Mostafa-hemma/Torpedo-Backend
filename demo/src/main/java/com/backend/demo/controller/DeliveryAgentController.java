@@ -72,6 +72,7 @@ public class DeliveryAgentController {
 		List<DeliveryAgent> agents =new ArrayList<DeliveryAgent>();
 
 		try {
+			System.out.println("agent password"+myAgent.getPassword());
 			agent=deliveryAgentService.addDeliveryAgent(myAgent);
 			agents.add(agent);
 
