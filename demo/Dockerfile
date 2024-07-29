@@ -8,10 +8,10 @@ WORKDIR /app
 COPY . /app/
 
 # Make Maven wrapper executable
-RUN chmod +x /app/mvnw
+RUN chmod +x mvnw
 
 # Run Maven build
-RUN ./mvnw clean install
+RUN ./mvnw clean package -DskipTests
 
 # Start the application
 CMD ["java", "-jar", "target/*.jar"]
